@@ -43,7 +43,7 @@ def err_spammer_popup():
 
 #custom file finder
 def customFileFinder():
-    root.filename =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("jpeg files","*.jpg"),("all files","*.*")))
+    root.filename =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("text files","*.txt"),("all files","*.*")))
     files.append(root.filename)
     Spammer(len(files)-1)
 
